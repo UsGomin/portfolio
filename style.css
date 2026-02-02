@@ -1,3 +1,27 @@
+
+
+/*Mise en page header*/
 header {
-    background-color: red;
+    text-align: center;
+    height: 50em;
+    width: 100%;
+    background-image: url(image/night.png);
+}
+
+header h1{
+    position: absolute;
+    font-size: 10em;
+    color: white;
+    z-index: 2;
+    top: 25%;
+    left: 18%;
+    transform: skewY(15deg);
+    text-shadow: -2px 2px 10px white;
+}
+
+
+
+
+body{
+    background-color: black;
 }
