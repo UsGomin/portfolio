@@ -67,7 +67,7 @@ header nav ul{
     flex-direction: row;
     justify-content: space-evenly;
     list-style: none;
-    width: 100vw;
+    width: 90vw;
 }
 
 header nav ul li {
@@ -96,24 +96,27 @@ main header{
     padding: 10px;
 }
 
-main section article{
+#profil{
     margin: 10px;
-    border-radius: 20px;
-    background-color: #bbb791;
-    display: flex;
-    justify-content: center;
     padding: 15px;
+    border-radius: 20px;
     height: fit-content;
+    background-color: #bbb791;
+    
 }
 
-main section article ul {
+#profil div{
+    display: flex;
+}
+
+#profil ul {
     display: flex;
     flex-direction: column;
     list-style: none;
-    width: 100vw;
+    width: fit-content;
 }
 
-main section article ul li{
+#profil ul li{
     font-size: 3em;
     list-style: none;
 }
@@ -124,4 +127,6 @@ h2{
     letter-spacing: 5px;
     font-family: "lemon milk";
     color: #bbb791;
+    text-shadow: -2px 3px black;
 }
+
