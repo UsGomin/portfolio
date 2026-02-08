@@ -10,6 +10,7 @@
     --color-bg-principale: #2e6f40;
     --color-bg-secondaire: #bbb791;
     --color-shadow-clair: #919191;
+    --color-chargement: #98a869;
 }
 
 
@@ -110,6 +111,12 @@ main header{
     border-radius: 20px;
     background-color: var(--color-bg-secondaire);
     display: flex;
+    flex-direction: column;
+}
+
+#profil div{
+    display: flex;
+    flex-direction: row;
 }
 
 #profil ul {
@@ -134,7 +141,7 @@ h2{
 
 
 #loader{
-    background-color: black;
+    background-color: var(--color-chargement);
     width: 100%;
     height: 100%;
     position: fixed;
@@ -142,8 +149,26 @@ h2{
     left: 0;
     opacity: 1;
     transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #loader.hide{
     opacity: 0;
+}
+
+.barrecharge {
+  height: 4px;
+  width: 45em;
+  --c:no-repeat linear-gradient(#6100ee 0 0);
+  background: var(--c),var(--c),#d7b8fc;
+  background-size: 60% 100%;
+  animation: l16 3s infinite;
+}
+@keyframes l16 {
+  0%   {background-position:-150% 0,-150% 0}
+  66%  {background-position: 250% 0,-150% 0}
+  100% {background-position: 250% 0, 250% 0}
 }
