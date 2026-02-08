@@ -6,8 +6,15 @@
     src: url(fonts/lemon_milk/LEMONMILK-Regular.otf) format("opentype");
 }
 
+:root{
+    --color-bg-principale: #2e6f40;
+    --color-bg-secondaire: #bbb791;
+    --color-shadow-clair: #919191;
+}
+
+
 body{
-    background-color: #2e6f40;
+    background-color: var(--color-bg-principale);
 }
 
 
@@ -22,16 +29,16 @@ header{
 
 header span{
     color: #50C878;
-    text-shadow: 1px 1px 1px #000000,
-        1px 2px 1px #000000,
-        1px 3px 1px #000000,
-        1px 4px 1px #000000,
-        1px 5px 1px #000000,
-        1px 6px 1px #000000,
-        1px 7px 1px #000000,
-        1px 8px 1px #000000,
-        1px 9px 1px #000000,
-        1px 10px 1px #000000,
+    text-shadow: 1px 1px 1px black,
+        1px 2px 1px black,
+        1px 3px 1px black,
+        1px 4px 1px black,
+        1px 5px 1px black,
+        1px 6px 1px black,
+        1px 7px 1px black,
+        1px 8px 1px black,
+        1px 9px 1px black,
+        1px 10px 1px black,
     1px 18px 6px rgba(16,16,16,0.4),
     1px 22px 10px rgba(16,16,16,0.2),
     1px 25px 35px rgba(16,16,16,0.2),
@@ -43,16 +50,16 @@ header h1{
     font-family: "lemon milk";
     font-size: 10em;
     color: #FFFFFF;
-    text-shadow: 1px 1px 1px #919191,
-        1px 2px 1px #919191,
-        1px 3px 1px #919191,
-        1px 4px 1px #919191,
-        1px 5px 1px #919191,
-        1px 6px 1px #919191,
-        1px 7px 1px #919191,
-        1px 8px 1px #919191,
-        1px 9px 1px #919191,
-        1px 10px 1px #919191,
+    text-shadow: 1px 1px 1px var(--color-shadow-clair),
+        1px 2px 1px var(--color-shadow-clair),
+        1px 3px 1px var(--color-shadow-clair),
+        1px 4px 1px var(--color-shadow-clair),
+        1px 5px 1px var(--color-shadow-clair),
+        1px 6px 1px var(--color-shadow-clair),
+        1px 7px 1px var(--color-shadow-clair),
+        1px 8px 1px var(--color-shadow-clair),
+        1px 9px 1px var(--color-shadow-clair),
+        1px 10px 1px var(--color-shadow-clair),
     1px 18px 6px rgba(16,16,16,0.4),
     1px 22px 10px rgba(16,16,16,0.2),
     1px 25px 35px rgba(16,16,16,0.2),
@@ -67,7 +74,8 @@ header nav ul{
     flex-direction: row;
     justify-content: space-evenly;
     list-style: none;
-    width: 100vw;
+    width: 100%;
+    gap: 5em;
 }
 
 header nav ul li {
@@ -81,7 +89,7 @@ a{
 }
 
 a:hover{
-    background-color: #bbb791;
+    background-color: var(--color-bg-secondaire);
 }
 
 p{
@@ -90,7 +98,7 @@ p{
 }
 
 main header{
-    background-color: #bbb791;
+    background-color: var(--color-bg-secondaire);
     border-radius: 20px;
     margin: 10px;
     padding: 10px;
@@ -99,7 +107,7 @@ main header{
 main section article{
     margin: 10px;
     border-radius: 20px;
-    background-color: #bbb791;
+    background-color: var(--color-bg-secondaire);
     display: flex;
     justify-content: center;
     padding: 15px;
@@ -110,7 +118,7 @@ main section article ul {
     display: flex;
     flex-direction: column;
     list-style: none;
-    width: 100vw;
+    width: 100%;
 }
 
 main section article ul li{
@@ -123,5 +131,21 @@ h2{
     font-size: 6em;
     letter-spacing: 5px;
     font-family: "lemon milk";
-    color: #bbb791;
+    color: var(--color-bg-secondaire);
+}
+
+
+#loader{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+#loader.hide{
+    opacity: 0;
 }
