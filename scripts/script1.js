@@ -12,3 +12,8 @@ window.addEventListener("load", () => {
     }, 500);
   }, 2700);
 });
+
+const boutton = document.getElementById("button");
+boutton.onclick = () => {
+  window.open('image/night.png');
+}

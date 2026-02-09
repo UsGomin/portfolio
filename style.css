@@ -18,6 +18,12 @@ body{
     background-color: var(--color-bg-principale);
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 header{
     text-align: center;
@@ -105,11 +111,15 @@ main header{
     padding: 10px;
 }
 
-#profil{
+article{
     margin: 10px;
     padding: 15px;
     border-radius: 20px;
-    background-color: var(--color-bg-secondaire);
+    background-color: var(--color-bg-secondaire); 
+    width: 95%; 
+}
+
+#profil{
     display: flex;
     flex-direction: column;
 }
@@ -172,3 +182,10 @@ h2{
   66%  {background-position: 250% 0,-150% 0}
   100% {background-position: 250% 0, 250% 0}
 }
+
+
+#projets{
+    display: flex;
+    flex-direction: row;
+}
+
