@@ -109,7 +109,7 @@ main header{
     border-radius: 20px;
     margin: 10px;
     padding: 10px;
-    width: 75vw;
+    width: 90vw;
 }
 
 article{
@@ -117,7 +117,7 @@ article{
     padding: 15px;
     border-radius: 20px;
     background-color: var(--color-bg-secondaire); 
-    width: 95%; 
+    width: 90vw; 
 }
 
 #profil{
@@ -188,5 +188,28 @@ h2{
 #projets{
     display: flex;
     flex-direction: row;
+    width: 75vw;
+    
 }
 
+#projets article {
+    align-items: center;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+h5 {
+    font-size: 2em;
+}
+
+li {
+    font-size: 1.5em;
+}
+
+#projets article:first-child div {
+    display: flex;
+    flex-direction: row;
+    gap: 7em;
+}
