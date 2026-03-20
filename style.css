@@ -1,3 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "lemon milk";
+    src: url(fonts/lemon_milk/LEMONMILK-Regular.otf) format("opentype");
+}
+
+
+:root {
+    --bg-color-1: #8775F0;
+    --bg-color-2: #FFD361;
+}
+
+
+
+body {
+    background-color: var(--bg-color-1) ;
+}
+
+
 header {
-    background-color: #00CBFF;
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+}
+
+header table{
+    font-size: 10em;
+    font-family: "lemon milk";
+}
+
+.nom{
+    background-color: var(--bg-color-2);
+    border-radius: 15px;
+    padding: 20px;
+
+}
+
+
+.cercle{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
 }
