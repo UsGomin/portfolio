@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 
 @font-face {
     font-family: "lemon milk";
@@ -7,17 +8,16 @@
 
 
 :root {
-    --bg-color-1: #1D1A31;
+    --bg-color-1: #D0A3BF;
     --bg-color-2: #9A4C95;
-    --font-color: #C1A5A9;
+    --font-color: #DCCCA3;
     --shadow-color: #4D2D52;
 }
 
 
-
 body {
-    background-color: var(--bg-color-1) ;
-    color: var(--font-color);
+    background-color: #D0A3BF ;
+    color: var(--shadow-color);
 }
 
 
@@ -36,6 +36,7 @@ header table{
     font-family: "lemon milk", sans-serif;
     position: absolute;
     top: 30%;
+    color: var(--font-color);
 }
 
 .nom{
@@ -49,6 +50,7 @@ header table{
 
 
 header p:first-child{
+    font-family: 'Nunito', sans-serif;
     font-size: 5em;
     top: 0;
     font-style: italic;
@@ -74,4 +76,41 @@ header p{
         transform: translateY(-10px); 
     }
 
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10em;
+    font-family: 'Nunito', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 10em;
+    align-self: center;
+    gap: 7em;
+    background-color: #DCCCA3;
+    box-shadow: -4px 4px 5px #824C71;
+    border-radius: 10px;
+}
+
+nav ul li{
+    list-style: none;
+    font-size: 3em;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--shadow-color);
+}
+
+nav a:hover li{
+    background-color: var(--shadow-color);
+    color: var(--font-color);
 }
