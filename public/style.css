@@ -8,7 +8,7 @@
 
 
 :root {
-    --bg-color-1: #D0A3BF;
+    --bg-color-1: #C585B3;
     --bg-color-2: #9A4C95;
     --font-color: #DCCCA3;
     --shadow-color: #4D2D52;
@@ -16,8 +16,8 @@
 
 
 body {
-    background-color: #D0A3BF ;
-    color: var(--shadow-color);
+    background-color: #FFF0F3 ;
+    color: #4A148C;
 }
 
 
@@ -95,8 +95,8 @@ nav ul{
     height: 10em;
     align-self: center;
     gap: 7em;
-    background-color: #DCCCA3;
-    box-shadow: -4px 4px 5px #824C71;
+    background-color: #FFF0F3;
+    box-shadow: 4px -4px rgba(255, 77, 148, 0.7);
     border-radius: 10px;
 }
 
@@ -107,10 +107,14 @@ nav ul li{
 
 nav a{
     text-decoration: none;
-    color: var(--shadow-color);
+    color: #4A148C;
 }
 
 nav a:hover li{
-    background-color: var(--shadow-color);
-    color: var(--font-color);
+    background-color: var(--font-color);
+    color: var(--shadow-color);
+}
+
+.profil{
+    background-color: #4D2D52;
 }
