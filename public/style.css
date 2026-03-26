@@ -8,16 +8,17 @@
 
 
 :root {
-    --bg-color-1: #C585B3;
-    --bg-color-2: #9A4C95;
-    --font-color: #DCCCA3;
-    --shadow-color: #4D2D52;
+    --bg-color-1: #FDFBD4;
+    --bg-color-2: #FED99B;
+    --bg-color-3: #33658A;
+    --font-color: #FED18C;
+    --shadow-color: #FE654F;
 }
 
 
 body {
-    background-color: #FFF0F3 ;
-    color: #4A148C;
+    background-color: var(--bg-color-1);
+    color: var(--shadow-color);
 }
 
 
@@ -95,8 +96,8 @@ nav ul{
     height: 10em;
     align-self: center;
     gap: 7em;
-    background-color: #FFF0F3;
-    box-shadow: 4px -4px rgba(255, 77, 148, 0.7);
+    background-color: var(--bg-color-3);
+    box-shadow: -4px 4px var(--shadow-color);
     border-radius: 10px;
 }
 
@@ -106,15 +107,36 @@ nav ul li{
 }
 
 nav a{
+    letter-spacing: 2px;
     text-decoration: none;
-    color: #4A148C;
+    color: var(--shadow-color);
+    background-color: var(--bg-color-2);
+    box-shadow: -4px 4px var(--shadow-color);
+    border-radius: 10px;
+    transition: transform 0.08s ease, box-shadow 0.08s ease;
 }
 
 nav a:hover li{
-    background-color: var(--font-color);
+    background-color: var(--bg-color-2);
     color: var(--shadow-color);
+    border-radius: 10px;
+    box-shadow: -2px 2px var(--shadow-color-2);
+    transform: translate(-2px, 2px);
 }
 
 .profil{
-    background-color: #4D2D52;
+    background-color: var(--bg-color-3);
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 15em;
+    width: 100%;
+}
+
+.pdp {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
 }
