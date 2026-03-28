@@ -5,6 +5,9 @@
 
     heroButton.addEventListener("click", () =>{ hero.setAttribute("hidden", ""); });
     heroButton.addEventListener("click", () => {document.body.style.overflow = "auto"; });
+
+    Splitting();
+    
 })();
 
 

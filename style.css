@@ -73,6 +73,29 @@ header p:first-child{
     animation: none;
 }
 
+.char{
+    animation: jump 2.5s ease-in-out infinite alternate;
+    animation-delay: calc(var(--char-index) * 0.1s);
+}
+
+
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+    
+
+
 header p{
     position: absolute;
     top: 75%;
