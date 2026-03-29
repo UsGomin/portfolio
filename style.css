@@ -34,6 +34,39 @@ body {
     z-index: 999;
 }
 
+.hero p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 5em;
+    top: 0;
+    font-style: italic;
+    letter-spacing: 0;
+    animation: none;
+}
+
+.char{
+    animation: jump 2.5s ease-in-out infinite alternate;
+    animation-delay: calc(var(--char-index) * 0.1s);
+}
+
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.hero button {
+    background-color: var(--shadow-color);
+    color: white;
+}
 
 
 header {
@@ -45,6 +78,7 @@ header {
     flex-direction: column;
     gap: 0;
 }
+
 
 header table{
     font-size: 10em;
@@ -62,39 +96,6 @@ header table{
 .prenom{
     text-shadow: 8px -5px var(--shadow-color);
 }
-
-
-header p:first-child{
-    font-family: 'Nunito', sans-serif;
-    font-size: 5em;
-    top: 0;
-    font-style: italic;
-    letter-spacing: 0;
-    animation: none;
-}
-
-.char{
-    animation: jump 2.5s ease-in-out infinite alternate;
-    animation-delay: calc(var(--char-index) * 0.1s);
-}
-
-
-
-@keyframes jump {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-    
-
 
 header p{
     position: absolute;
