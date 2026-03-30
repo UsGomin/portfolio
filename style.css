@@ -8,17 +8,64 @@
 
 
 :root {
-    --bg-color-1: #FDFBD4;
-    --bg-color-2: #FED99B;
-    --bg-color-3: #33658A;
-    --font-color: #FED18C;
-    --shadow-color: #FE654F;
+    --bg-color-1: #0077b6;
+    --bg-color-2: #00b4d8;
+    --bg-color-3: #023e8a;
+    --font-color: #00b4d8;
+    --shadow-color: #03045e;
 }
 
 
 body {
     background-color: black;
     color: var(--shadow-color);
+    margin: 0;
+    overflow: hidden;
+}
+
+.hero{
+    background-color: var(--shadow-color);
+    position: absolute;
+    top: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    z-index: 999;
+}
+
+.hero p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 5em;
+    top: 0;
+    font-style: italic;
+    letter-spacing: 0;
+    animation: none;
+}
+
+.char{
+    animation: jump 2.5s ease-in-out infinite alternate;
+    animation-delay: calc(var(--char-index) * 0.1s);
+}
+
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.hero button {
+    background-color: var(--shadow-color);
+    color: white;
 }
 
 
@@ -32,11 +79,12 @@ header {
     gap: 0;
 }
 
+
 header table{
     font-size: 10em;
     font-family: "lemon milk", sans-serif;
     position: absolute;
-    top: 30%;
+    top: 15%;
     color: var(--font-color);
 }
 
@@ -49,19 +97,9 @@ header table{
     text-shadow: 8px -5px var(--shadow-color);
 }
 
-
-header p:first-child{
-    font-family: 'Nunito', sans-serif;
-    font-size: 5em;
-    top: 0;
-    font-style: italic;
-    letter-spacing: 0;
-    animation: none;
-}
-
 header p{
     position: absolute;
-    top: 80%;
+    top: 75%;
     font-size: 4em;
     font-style: normal;
     letter-spacing: 5px;

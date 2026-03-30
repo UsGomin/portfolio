@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
     <title>Portfolio Antoine Schoubert</title>
 </head>
 <body>
+    <div class="hero" id="hero">
+        <p data-splitting>Welcome on my portfolio</p>
+        <button id="btn">Click Me</button>
+    </div>
     <header>
-        <p>Welcome on my portfolio</p>
         <table>
             <tbody>
                 <tr>
@@ -43,5 +47,7 @@
         </section>
     </main>
 
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
