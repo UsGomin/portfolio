@@ -17,7 +17,7 @@
 
 
 body {
-    background-color: var(--bg-color-1);
+    background-color: black;
     color: var(--shadow-color);
 }
 
@@ -101,7 +101,7 @@ nav ul{
     border-radius: 10px;
 }
 
-nav ul li{
+nav ul li{  
     list-style: none;
     font-size: 3em;
 }
