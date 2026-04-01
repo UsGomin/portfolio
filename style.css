@@ -17,7 +17,7 @@
 
 
 body {
-    background-color: black;
+    background-color: var(--bg-color-1);
     color: var(--shadow-color);
     margin: 0;
     overflow: hidden;
@@ -44,7 +44,7 @@ body {
 }
 
 .char{
-    animation: jump 2.5s ease-in-out infinite alternate;
+    animation: jump 2.5s ease-in-out infinite;
     animation-delay: calc(var(--char-index) * 0.1s);
 }
 
