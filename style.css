@@ -266,21 +266,15 @@ header p{
     margin-top: 20px;
     display: flex;
     flex-direction: row;
-    font-size: 7em;
+    font-size: 5em;
     justify-content: space-evenly;
 }
 
-<<<<<<< HEAD
-nav ul li{  
-    list-style: none;
-    font-size: 3em;
-=======
 .group{
     display: flex;
     gap: 3em;
     padding-right: 3em;
     animation: carroussel 20s linear infinite;
->>>>>>> 0f675ca248abb2b5fb65436a1dd61cf82d5b886f
 }
 
 .group li{
