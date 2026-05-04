@@ -274,7 +274,7 @@ header p{
     display: flex;
     gap: 3em;
     padding-right: 3em;
-    animation: carroussel 20s linear infinite;
+    animation: carroussel 40s linear infinite;
 }
 
 .group li{
@@ -306,8 +306,27 @@ a{
     width: 100%;
 }
 
+.profil p{
+  width: 75%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.75rem;
+}
+
+.profil span{
+  color: var(--font-color);
+}
 .pdp {
     width: 300px;
     height: 300px;
     border-radius: 100%;
+    box-shadow: 0 0 50px var(--shadow-color);
+    border: solid 2px var(--font-color);
+}
+
+main section h1 {
+  font-family: "lemon milk", sans-serif;
+  font-size: 5em;
+  color: var(--font-color);
+  text-shadow: 5px -5px var(--shadow-color);
+  margin-left: 35%;
 }
