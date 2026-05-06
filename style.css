@@ -20,6 +20,7 @@ body {
     color: var(--shadow-color);
     margin: 0;
     overflow: hidden;
+    
 }
 
 .hero{
@@ -268,6 +269,7 @@ header p{
     flex-direction: row;
     font-size: 5em;
     justify-content: space-evenly;
+    overflow-x: hidden;
 }
 
 .group{
@@ -329,4 +331,17 @@ main section h1 {
   color: var(--font-color);
   text-shadow: 5px -5px var(--shadow-color);
   margin-left: 35%;
+}
+
+.project-wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 50px;
+  grid-auto-rows: 300px;
+}
+.project-wrapper div{
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
 }
