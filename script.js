@@ -3,10 +3,18 @@
     const hero = $('hero');
     const heroButton = $('btn');
 
-    heroButton.addEventListener("click", () =>{ hero.setAttribute("hidden", ""); });
+    window.addEventListener("load", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    });
+
+    heroButton.addEventListener("click", () =>{ hero.setAttribute("hidden", "true"); });
     heroButton.addEventListener("click", () => {document.body.style.overflow = "auto"; });
 
     Splitting();
+    
     
 })();
 

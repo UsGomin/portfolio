@@ -15,6 +15,15 @@
 }
 
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.3);
+  border-radius: 10px;
+}
+
 body {
     background-color: var(--bg-color-1);
     color: var(--shadow-color);
@@ -264,7 +273,7 @@ header p{
 
 .carroussel{
     font-family: 'Nunito', sans-serif;
-    margin-top: 20px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     font-size: 5em;
