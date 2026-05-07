@@ -325,6 +325,7 @@ a{
 
 .profil span{
   color: var(--font-color);
+  font-weight: bold;
 }
 .pdp {
     width: 300px;
