@@ -349,21 +349,33 @@ main section h1 {
 
 .project-wrapper{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 50px;
   grid-auto-rows: 300px;
 }
 .project-wrapper div{
-  background-color: white;
+  background-color: var(--bg-color-2);
   border-radius: 20px;
   padding: 20px;
 }
 
+.sokoban{
+  background-image: url(image/sokoban.png);
+  
+}
+.sokban p, .sokoban h3{
+  backdrop-filter: blur(10px);
+}
+
+.sokoban p{
+  font-size: 1.5em;
+  color:var(--font-color);
+}
 
 .competences-wrapper{
   display: grid;
-  grid-template-columns: repeat(3, 575px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 50px;
   grid-auto-rows: 300px;
@@ -399,6 +411,31 @@ h3{
 }
 
 .competences-wrapper p:hover{
+  transform: translate(2px, -2px);
+  box-shadow: 2px -2px var(--shadow-color);
+  cursor: default;
+}
+
+
+.lien-wrapper{
+  margin-left: 25%;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  display: flex;
+  gap: 30px;
+}
+
+.lien-wrapper a{
+  background-color: var(--bg-color-2);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 4px -4px var(--shadow-color);
+  color: var(--font-color);
+  width: fit-content;
+  transition: transform 0.08s ease box-shadow;
+}
+
+.lien-wrapper a:hover{
   transform: translate(2px, -2px);
   box-shadow: 2px -2px var(--shadow-color);
 }
