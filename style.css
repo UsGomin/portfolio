@@ -32,6 +32,10 @@ body {
     
 }
 
+p{
+  font-family: 'Nunito', sans-serif;
+}
+
 .hero{
     background-color: black;
     position: absolute;
@@ -44,7 +48,6 @@ body {
 }
 
 .hero p{
-    font-family: 'Nunito', sans-serif;
     font-size: 5em;
     top: 0;
     font-style: italic;
@@ -104,7 +107,7 @@ body {
   font-weight: 900;
   line-height: 1.5;
   margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);justify-content: space-evenly;
   padding: 0;
   text-transform: uppercase;
 }
@@ -343,6 +346,7 @@ main section h1 {
   margin-left: 35%;
 }
 
+
 .project-wrapper{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -354,4 +358,47 @@ main section h1 {
   background-color: white;
   border-radius: 20px;
   padding: 20px;
+}
+
+
+.competences-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 575px);
+  gap: 20px;
+  padding: 50px;
+  grid-auto-rows: 300px;
+}
+
+.competences-wrapper div{
+  background-color: var(--bg-color-2);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+h3{
+  font-family: "lemon milk", sans-serif;
+  font-size: 25px;
+}
+
+.langage-wrapper,
+.outil-wrapper,
+.soft-skills-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.competences-wrapper p{
+  background-color: var(--bg-color-1);
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 4px -4px var(--shadow-color);
+  color: var(--font-color);
+  transition: transform 0.08s ease box-shadow;
+}
+
+.competences-wrapper p:hover{
+  transform: translate(2px, -2px);
+  box-shadow: 2px -2px var(--shadow-color);
 }
