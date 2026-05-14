@@ -360,18 +360,51 @@ main section h1 {
   padding: 20px;
 }
 
+.project-wrapper p, .project-wrapper h3{
+  backdrop-filter: blur(15px);
+  width: fit-content;
+}
+
+.project-wrapper p{
+  font-size: 1.5em;
+  color:var(--font-color);
+}
+
+.project-wrapper button{
+  width: 125px;
+  height: 50px;
+  margin-left: 45%;
+  margin-top: 80px;
+  background-color: var(--bg-color-1);
+  font-family: "lemon milk", sans-serif;
+  color: var(--shadow-color);
+  border-radius: 20px;
+  border: none;
+  box-shadow: 5px -5px var(--shadow-color);
+  cursor: pointer;
+}
+
+.project-wrapper button:hover{
+  transform: translate(2px, -2px);
+  box-shadow: 2px -2px var(--shadow-color);
+}
+
 .sokoban{
   background-image: url(image/sokoban.png);
   
 }
-.sokban p, .sokoban h3{
-  backdrop-filter: blur(10px);
+
+.site-grece{
+  background-image: url(image/grece.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-.sokoban p{
-  font-size: 1.5em;
-  color:var(--font-color);
+.auto-convert{
+  background-image: url(image/convert.png);
+  background-size: contain;
 }
+
 
 .competences-wrapper{
   display: grid;
@@ -405,14 +438,7 @@ h3{
   text-transform: uppercase;
   border-radius: 20px;
   padding: 10px;
-  box-shadow: 4px -4px var(--shadow-color);
   color: var(--font-color);
-  transition: transform 0.08s ease box-shadow;
-}
-
-.competences-wrapper p:hover{
-  transform: translate(2px, -2px);
-  box-shadow: 2px -2px var(--shadow-color);
   cursor: default;
 }
 
